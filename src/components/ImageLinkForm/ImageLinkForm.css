@@ -1,0 +1,20 @@
+:root {
+    --arrowblue: #216f8d;
+    --arrowgreen: #30cb5b;
+    --button: #8f30cb;
+}
+
+.form {
+    width: 700px;
+    background: #36c;
+        background:
+                linear-gradient(45deg, var(--arrowblue) 45px, transparent 45px)64px 64px,
+                linear-gradient(45deg, var(--arrowblue) 45px, transparent 45px, transparent 91px, var(--arrowgreen) 91px, var(--arrowgreen) 135px, transparent 135px),
+                linear-gradient(-45deg, var(--arrowblue) 23px, transparent 23px, transparent 68px, var(--arrowblue) 68px, var(--arrowblue) 113px, transparent 113px, transparent 158px, var(--arrowblue) 158px);
+            background-color: var(--arrowgreen);
+            background-size: 128px 128px;
+}
+
+.detect-button {
+    background-color: var(--button);
+}
