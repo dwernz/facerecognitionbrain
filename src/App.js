@@ -87,7 +87,7 @@ class App extends Component {
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
 
-    fetch('http://localhost:3000/imageurl', {
+    fetch('https://smart-brain-api-jbwl.onrender.com/imageurl', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
@@ -100,7 +100,7 @@ class App extends Component {
         // do something with response
         // console.log(response.outputs[0].data.regions[0].region_info.bounding_box);
         if(response) {
-          fetch('http://localhost:3000/image', {
+          fetch('https://smart-brain-api-jbwl.onrender.com/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
